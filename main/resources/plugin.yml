@@ -1,0 +1,14 @@
+name: CustomTrades
+version: 1.0.0
+author: Sniskus
+main: com.sniskus.vip.CustomTrades
+api-version: 1.19
+description: Custom villager trades plugin for minecraft 1.19!
+depend:
+- PEconomy
+- Vault
+- SCore
+softdepend:
+- PlaceholderAPI
+commands:
+   trades: {}

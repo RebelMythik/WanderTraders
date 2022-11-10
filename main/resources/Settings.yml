@@ -1,0 +1,59 @@
+#Thank you for hiring me :>
+#  - Made by Sniskus
+#  - Made for RebelMythik <3
+#
+# HEX format: #ffffff
+# HEX fade: <#ffffff>Text</#000000>
+# Configure custom fades in SCore
+#
+Prefix: '&7[&b&lCustomTrades&7] &r'
+Permissions:
+   Reload: 'customtrades.reload'
+   Give: 'customtrades.give'
+Messages:
+   Reloaded: '&eAll files have been reloaded!'
+   Give: '&eYou gave one of %item% to %player%!'
+   NoPermission: '&cYou do not have permission to do that!'
+   InvalidArgs: '&cInvalid arguments!'
+   UnknownItem: '&cUnknown item id!'
+GUI:
+   Filler:
+      Name: '&8Filler'
+      Item: 'Black Stained Glass Pane'
+   Titles:
+      TraderGUI: 'Wandering Trader'
+   State:
+      Available: '&aAvailable'
+      AlreadyBought: '&cAlready bought'
+      CantAfford: '&cCan''t afford!'
+      InventoryFull: '&cInventory full!'
+Trades:
+   #Clone this section to create more items
+   MyItem:
+      #Optional. Remove this to use the "real" item name
+      Name: 'My Book'
+      #Optional
+      Lore:
+      - ''
+      - '&eThis is my custom book!'
+      #Required
+      Item: 'Enchanted Book'
+      #This will only work for books. Required for enchanted books
+      #Format: 'Enchantment, Level'
+      Enchantment: 'Mending, 1'
+      #Required
+      Amount: 1
+      #Vault or PEconomy. Required
+      PaymentMethod: 'PEconomy'
+      #This is required if the payment method
+      #is PEconomy. Otherwise it does nothing
+      CurrencyID: 'dollars'
+      #Required
+      Price: 100.0
+      #Required
+      #100 is always, 0 is never
+      Chance: 100.0
+      #Optional
+      Commands:
+      - 'customtrades:trades give myitem %player_name%'
+#Vip id - 7
